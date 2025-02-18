@@ -3,17 +3,17 @@ const app=express()
 
 app.get("/",(req,res)=>
 {
-    res.send("<h1>Hellow from express</h1>")
+    res.send("<h1>Hello from express</h1>")
 })
 
 app.get("/about",(req,res)=>
     {
-        res.send("<h1>About page... hahahah</h1>")
+        res.send("<h1>About page</h1>")
     })
 
 app.get("/home",(req,res)=>
     {
-        res.send("<h1 style='text-align:bottom'>--HOME--</h1>")
+        res.send("<h1 style='text-align:bottom'>-- HOME --</h1>")
     })
 
 app.use((req,res)=>
